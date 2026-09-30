@@ -1,0 +1,5 @@
+model,requests,latency_mean,latency_median,total_tokens,cost_rub,tokens_per_s,cost_per_1000_mean,cost_per_1000_median
+GigaChat-3-Lightning,20,2.52,2.56,15395,1.0,283.25,50.03,51.15
+GigaChat-3-Pro,20,6.98,6.0,19295,9.65,128.55,482.38,411.75
+deepseek-v4-pro,20,156.66,53.74,78333,1.44,23.87,72.15,47.36
+deepseek-v4.1-flash,20,23.01,24.94,73777,1.36,156.04,67.96,50.02

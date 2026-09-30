@@ -1,0 +1,82 @@
+model,task,run,mark,score,comment
+GigaChat-3-Pro,python,1,~,0.5,пример вывода не совпадает с реальным ({'мир': 2} вместо 3)
+GigaChat-3-Pro,python,2,✗,0,регулярка только для латиницы: русский текст даёт {}
+GigaChat-3-Pro,python,3,~,0.5,пример вывода не совпадает с реальным ('тест': 2 вместо 1)
+GigaChat-3-Pro,python,4,✓,1,
+GigaChat-3-Pro,python,5,~,0.5,пример вывода не совпадает с реальным
+GigaChat-3-Pro,c,1,✓,1,
+GigaChat-3-Pro,c,2,✓,1,
+GigaChat-3-Pro,c,3,✓,1,
+GigaChat-3-Pro,c,4,✓,1,
+GigaChat-3-Pro,c,5,✓,1,
+GigaChat-3-Pro,math,1,~,0.5,E[c] через дельта-функцию с опиской; в примере записано np^n
+GigaChat-3-Pro,math,2,~,0.5,E[c]: «плотность сосредоточена в точке c» — у константы нет плотности
+GigaChat-3-Pro,math,3,~,0.5,E[c] через дельта-функцию как плотность — нестрого
+GigaChat-3-Pro,math,4,~,0.5,доказательство E[c] опущено («очевидно»)
+GigaChat-3-Pro,math,5,✓,1,
+GigaChat-3-Pro,literature,1,✗,0,«отказываясь топить собаку» — Герасим сам утопил Муму
+GigaChat-3-Pro,literature,2,✗,0,«отказавшись подчиниться приказу убить» — неверно
+GigaChat-3-Pro,literature,3,~,0.5,"не сказано, что Герасим глухонемой; Муму не описана"
+GigaChat-3-Pro,literature,4,✓,1,
+GigaChat-3-Pro,literature,5,✓,1,
+GigaChat-3-Lightning,python,1,✓,1,
+GigaChat-3-Lightning,python,2,~,0.5,"удаляет пунктуацию без пробела: 'кот,кот' склеивается"
+GigaChat-3-Lightning,python,3,~,0.5,"удаляет пунктуацию без пробела: 'кот,кот' склеивается"
+GigaChat-3-Lightning,python,4,~,0.5,"удаляет пунктуацию без пробела: 'кот,кот' склеивается"
+GigaChat-3-Lightning,python,5,✗,0,только латиница: русский текст даёт {}; пример вывода выдуман
+GigaChat-3-Lightning,c,1,✓,1,
+GigaChat-3-Lightning,c,2,✓,1,
+GigaChat-3-Lightning,c,3,~,0.5,swap вызван без объявления (в GCC 14+ ошибка компиляции)
+GigaChat-3-Lightning,c,4,✓,1,
+GigaChat-3-Lightning,c,5,✓,1,
+GigaChat-3-Lightning,math,1,~,0.5,нет условия абсолютной сходимости; E[X]>=0 названо неравенством Маркова
+GigaChat-3-Lightning,math,2,✗,0,неверное доказательство линейности: сумма (x_i+y_i)p_i без совместного распределения
+GigaChat-3-Lightning,math,3,✗,0,неверные доказательства линейности и E[XY]; «неравенство Маркова: E[X]>=0»
+GigaChat-3-Lightning,math,4,✗,0,ложное «свойство однородности степени» E[X^n]
+GigaChat-3-Lightning,math,5,✗,0,геометрическое распределение: p/(1-(1-p)) = 1/p — неверная выкладка
+GigaChat-3-Lightning,literature,1,✗,0,"«Капитан Тимофей — мелкий чиновник», «побег» Татьяны — выдумано"
+GigaChat-3-Lightning,literature,2,✗,0,"«Андрей Громов (дворецкий)», Капитон «дворник» — выдумано"
+GigaChat-3-Lightning,literature,3,✗,0,"«Капитон Лукич Бульбан, плотник», Муму «подарена барыней» — выдумано"
+GigaChat-3-Lightning,literature,4,✗,0,«Капитан Тимофей (кухарь)» уговорил Татьяну — выдумано; Капитона нет
+GigaChat-3-Lightning,literature,5,✗,0,"«Капитон Булька (лакей)», барыня «средних лет» — неверно"
+deepseek-v4-pro,python,1,✓,1,
+deepseek-v4-pro,python,2,✓,1,
+deepseek-v4-pro,python,3,✓,1,
+deepseek-v4-pro,python,4,✓,1,
+deepseek-v4-pro,python,5,✓,1,
+deepseek-v4-pro,c,1,✓,1,
+deepseek-v4-pro,c,2,✓,1,
+deepseek-v4-pro,c,3,✓,1,
+deepseek-v4-pro,c,4,✓,1,
+deepseek-v4-pro,c,5,✓,1,
+deepseek-v4-pro,math,1,✗,0,ответ обрезан лимитом max_tokens=8192
+deepseek-v4-pro,math,2,✗,0,ответ обрезан лимитом max_tokens=8192
+deepseek-v4-pro,math,3,✗,0,ответ обрезан лимитом max_tokens=8192
+deepseek-v4-pro,math,4,✗,0,ответ обрезан лимитом max_tokens=8192
+deepseek-v4-pro,math,5,✗,0,ответ обрезан лимитом max_tokens=8192
+deepseek-v4-pro,literature,1,✓,1,
+deepseek-v4-pro,literature,2,✓,1,
+deepseek-v4-pro,literature,3,✓,1,
+deepseek-v4-pro,literature,4,✓,1,
+deepseek-v4-pro,literature,5,✓,1,
+deepseek-v4.1-flash,python,1,✓,1,
+deepseek-v4.1-flash,python,2,✓,1,
+deepseek-v4.1-flash,python,3,✓,1,
+deepseek-v4.1-flash,python,4,✓,1,
+deepseek-v4.1-flash,python,5,✓,1,
+deepseek-v4.1-flash,c,1,✓,1,
+deepseek-v4.1-flash,c,2,✓,1,
+deepseek-v4.1-flash,c,3,✓,1,
+deepseek-v4.1-flash,c,4,✓,1,
+deepseek-v4.1-flash,c,5,✓,1,
+deepseek-v4.1-flash,math,1,✓,1,
+deepseek-v4.1-flash,math,2,✓,1,
+deepseek-v4.1-flash,math,3,~,0.5,неточность в дополнительном замечании (сумма индикаторов с k=0)
+deepseek-v4.1-flash,math,4,✓,1,
+deepseek-v4.1-flash,math,5,✓,1,
+deepseek-v4.1-flash,literature,1,✓,1,
+deepseek-v4.1-flash,literature,2,✗,0,ответ обрезан лимитом max_tokens=8192
+deepseek-v4.1-flash,literature,3,~,0.5,мелкие неточности во второстепенных деталях (Любовь Любимовна)
+deepseek-v4.1-flash,literature,4,✓,1,
+deepseek-v4.1-flash,literature,5,✓,1,
+deepseek-v4-pro,math (без лимита),1,✓,1,results_unlimited: ответ полный и верный
